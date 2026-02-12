@@ -1,0 +1,8 @@
+1. ¿Qué pasaría si no definimos correctamente las claves de cada entidad desde el inicio?
+Si no se establecen claves primarias únicas desde el diseño, el sistema pierde control y se generan inconsistencias. Aparecen registros duplicados o imposibles de identificar, lo que complica la gestión. Por ejemplo, si usamos solo el nombre como identificador y existen dos estudiantes llamados "María López", no sabríamos a cuál corresponde una nota o matrícula. Corregir este error después, con la base llena de datos, implica procesos de depuración y migración muy costosos.
+
+2. ¿Qué ventajas aporta tener identificadas las entidades antes de pasar al diagrama ER formal?
+Permite organizar la información de manera lógica antes de representarla gráficamente. Identificar entidades nos ayuda a diferenciar lo que realmente es un objeto del sistema (como Profesor o Materia) de lo que solo es un atributo (como el correo del profesor). Es como hacer un inventario de piezas antes de armar un rompecabezas: se gana claridad y se evitan confusiones al momento de construir el diagrama.
+
+3. ¿Qué información adicional consideras crítica en un sistema académico que aún no hemos modelado?
+Sería fundamental incluir los Horarios y los Espacios físicos (Salones o Laboratorios), ya que sin ellos no se puede organizar la logística de las clases. También deberían modelarse los Prerrequisitos de las asignaturas y los Requisitos de graduación, para garantizar que los estudiantes sigan un plan académico coherente y no se inscriban en cursos avanzados sin haber aprobado los básicos. Esto asegura orden y consistencia en el sistema académico.
