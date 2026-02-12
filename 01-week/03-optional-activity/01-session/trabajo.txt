@@ -1,5 +1,13 @@
-¿Qué criterios usaría para decidir cuándo migrar de archivos planos a un SGBD?
+Tarea A: Identificación de problema
+Síntomas	Problema principal	¿Cómo ayuda un SGBD?
+Listas repetidas de estudiantes	Redundancia de datos	Se crea una tabla única de estudiantes con un identificador (ID) como clave primaria. El SGBD evita duplicados y centraliza la información.
+Notas contradictorias	Falta de integridad	Con llaves foráneas y restricciones, el sistema garantiza que las notas estén asociadas a estudiantes válidos y dentro de un rango definido (ejemplo: 0.0 a 5.0).
+No existe historial completo.	Limitaciones en consultas	El motor SQL permite realizar consultas con JOIN entre estudiantes, materias y notas, generando reportes consolidados en segundos.
+Tarea B: Discusión guiada
+¿Qué criterios usarías para decidir cuándo migrar de archivos planos a un SGBD?
 
-1. Cuándo la cantidad de registros es bastante ámplia. 
-2. Cuándo son muchas personas las que manipulan de los datos
-3. Latencia de respuesta cuando se desea consultar cierta información
+Migraría cuando el volumen de datos crezca y varias personas necesiten acceder o modificar la información al mismo tiempo, ya que los archivos de planos se corrompen fácilmente en esos casos. También cuando la seguridad sea importante: en un archivo cualquiera puede borrar o alterar datos, mientras que en un SGBD se controla el acceso. Finalmente, si las relaciones entre datos se vuelven complejas (por ejemplo, muchos a muchos), el archivo plano deja de ser funcional y el SGBD se convierte en la mejor opción.
+
+¿Qué tipo de SGBD (relacional o NoSQL) parece más adecuado para este contexto y por qué?
+
+El más adecuado es un SGBD relacional (SQL). Los sistemas académicos requieren estructuras claras y consistentes: cada estudiante debe tener nombre, código y correo. Además, la integridad referencial es esencial para que las notas y certificados sean confiables. Un sistema NoSQL con consistencia eventual no sería apropiado, porque aquí la precisión y la fiabilidad de los datos son fundamentales.
