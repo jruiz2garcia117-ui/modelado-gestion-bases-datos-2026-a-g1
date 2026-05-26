@@ -1,0 +1,32 @@
+======================================================================
+PROYECTO FINAL - MODELADO Y GESTIÓN DE BASES DE DATOS
+INTEGRANTE: Juan Manuel Ruiz Garcia
+INSTITUCIÓN: Corporación Universitaria del Huila (CORHUILA)
+======================================================================
+
+Estimado Ingeniero,
+
+A continuación, comparto los enlaces oficiales a los repositorios de GitHub que contienen el código fuente, la infraestructura automatizada y toda la documentación técnica correspondiente al Proyecto Final del Sistema de Reservas del Glamping:
+
+1. REPOSITORIO DE CÓDIGO Y BASE DE DATOS (project-bd):
+👉 https://github.com/bd-final-juan-manuel-ruiz-garcia/project-bd.git
+
+* Nota para la revisión automatizada: El archivo 'docker-compose.yml' se encuentra disponible tanto en la raíz principal del proyecto como en la subcarpeta '/docker' para garantizar la reproducibilidad y compatibilidad con cualquier script o IA de evaluación. Mapeado al puerto libre 5433 para evitar conflictos de red locales.
+
+
+2. REPOSITORIO DE DOCUMENTACIÓN (project-docs):
+👉 https://github.com/bd-final-juan-manuel-ruiz-garcia/project-docs.git
+
+* Contiene los casos de uso, las reglas de negocio, el diccionario de datos detallado, el modelo entidad-relación y las capturas de pantalla con las evidencias del funcionamiento del sistema.
+
+
+INSTRUCCIONES RÁPIDAS DE DESPLIEGUE:
+1. git clone https://github.com/bd-final-juan-manuel-ruiz-garcia/project-bd.git
+2. cd project-bd
+3. docker compose up -d (Levanta PostgreSQL y ejecuta las migraciones automáticas de Liquibase)
+
+Quedo atento a la sustentación del proyecto. Muchas gracias por su guía durante el semestre.
+
+Atentamente,
+Juan Manuel Ruiz Garcia
+🔗 Perfil de GitHub: https://github.com/bd-final-juan-manuel-ruiz-garcia
